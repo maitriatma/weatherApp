@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather APP</title>
+</head>
+<body>
+    <h1> Weather APP</h1>
+  
+    <form>
+      <label>Search your City:</label>
+      <input type="text" id="city-input">
+      <button type="submit" id="search-button">GO</button>
+    </form>
+  
+      <p id="city-name"></p>
+      <p>Time: <span id="time"></span></p>
+      <p>Weather: <span id="description"></span><img id="weather-icon"></p>
+      <p>Temperature: <span id="temperature"></span> &deg;C</p>
+      <p>Humidity: <span id="humidity"></span>%</p>
+      <p>Pressure: <span id="pressure"></span> hPa</p>
+      <p>Wind: <span id="wind"></span> m/s</p>
+      
+      <style>
+        h1 {
+          background-color: aqua;   
+          padding: 20px;
+        }
+        form{
+          border-radius: 10px;
+          background-color: #828df1;
+        }
+        body {
+          background-image: url(background.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          text-align: center;
+        }
+        p {
+          padding: 20px;
+          background-color: #e59c9c;
+          box-shadow: 0 0 10px rgb(243, 6, 6);
+          border-radius: 10px;
+        }
+      </style>
+      <div class="show_button">
+        <button class="history" onclick="showTable()"><a href="index.php">See history</a></button>
+      </div>
+      <script src="weatherapp.js"></script>
+  </body>
+</html>
