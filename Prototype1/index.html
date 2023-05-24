@@ -4,47 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather APP</title>
+    <title>WEATHER APP | CHECK THE WEATHER</title>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Weather-rain-thunderstorm.svg/1839px-Weather-rain-thunderstorm.svg.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+<link rel="stylesheet" href="index.css">
 <body>
-    <h1> Weather APP</h1>
+    <h1 style="text-align: center; text-decoration: underline purple;" ><i>Weather App</i></h1>
+    <div class="main">
+        <div class="every">
+            <div class="search-box">
+                <input autocomplete="off" placeholder="Enter your city"  type="search" name="search" id="search" >
+                <i onclick="weather(city)" id="search_btn" class="fa fa-search"></i>      
+            </div>  
+            <div class="temp">
+                  <h1 id="temp"> </h1>
+                  </div>
+            <div class="description">
+                  <h1 id="weather_status"> </h1>
+                  </div>
+                  <div class="wind">
+                        <h1 id="wind"> </h1>
+                        </div>
+        </div>
+        </div>
+
   
-    <form>
-      <label>Search your City:</label>
-      <input type="text" id="city-input">
-      <button type="submit" id="search-button">GO</button>
-    </form>
-  
-      <p id="city-name"></p>
-      <p>Time: <span id="time"></span></p>
-      <p>Weather: <span id="description"></span><img id="weather-icon"></p>
-      <p>Temperature: <span id="temperature"></span> &deg;C</p>
-      <p>Humidity: <span id="humidity"></span>%</p>
-      <p>Pressure: <span id="pressure"></span> hPa</p>
-      <p>Wind: <span id="wind"></span> m/s</p>
-      
-      <style>
-        h1 {
-          background-color: aqua;   
-          padding: 20px;
-        }
-        form{
-          border-radius: 10px;
-          background-color: #828df1;
-        }
-        body {
-          background-image: url(background.jpg);
-          background-repeat: no-repeat;
-          background-size: cover;
-          text-align: center;
-        }
-        p {
-          padding: 20px;
-          background-color: #e59c9c;
-          box-shadow: 0 0 10px rgb(243, 6, 6);
-          border-radius: 10px;
-        }
-      </style>
-      <script src="weatherapp.js"></script>
-  </body>
+    <script defer src="index.js"></script>
+</body>
 </html>
